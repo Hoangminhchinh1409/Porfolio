@@ -12,7 +12,7 @@ const Contact = () => {
   const [status, setStatus] = useState('idle'); // idle, sending, success, error
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = (_data) => {
     setStatus('sending');
     
     // NOTE: Replace these with your actual EmailJS IDs

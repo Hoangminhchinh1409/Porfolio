@@ -99,7 +99,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex-1 flex justify-center md:justify-end"
           >
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-1 bg-gradient-to-tr from-accent via-neon to-accent-light animate-spin-slow">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-1 bg-linear-to-tr from-accent via-neon to-accent-light animate-spin-slow">
               <div className="w-full h-full rounded-full overflow-hidden bg-slate-900 flex items-center justify-center border-4 border-white dark:border-slate-900">
                 <div className="text-white text-6xl font-bold">HC</div>
                 {/* Fallback avatar if no image provided yet */}

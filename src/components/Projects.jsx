@@ -100,7 +100,7 @@ const Projects = () => {
                   />
                 </div>
                 
-                <div className="p-6 flex flex-col flex-grow">
+                <div className="p-6 flex flex-col grow">
                     <div className="flex justify-between items-start mb-4">
                     <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 group-hover:text-accent transition-colors">
                       {project.title}
@@ -115,7 +115,7 @@ const Projects = () => {
                     </div>
                   </div>
                   
-                  <p className="text-slate-600 dark:text-slate-400 text-sm mb-6 flex-grow">
+                  <p className="text-slate-600 dark:text-slate-400 text-sm mb-6 grow">
                     {project.description}
                   </p>
                   

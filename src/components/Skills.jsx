@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { FaReact, FaNodeJs, FaJava, FaPython, FaDocker } from 'react-icons/fa';
-import { SiMongodb, SiTailwindcss, SiTypescript, SiPostgresql, SiFigma } from 'react-icons/si';
+import { SiMongodb, SiTailwindcss, SiTypescript, SiFigma } from 'react-icons/si';
 
 const Skills = () => {
   const { t } = useTranslation();
