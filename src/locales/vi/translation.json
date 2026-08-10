@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "about": "Giới thiệu",
+    "skills": "Kỹ năng",
+    "experience": "Kinh nghiệm",
+    "projects": "Dự án",
+    "contact": "Liên hệ",
+    "resume": "Tải CV"
+  },
+  "hero": {
+    "greeting": "Xin chào, tôi là",
+    "name": "Hoàng Minh Chính",
+    "tagline": "Tôi xây dựng ứng dụng web & huấn luyện mô hình AI.",
+    "roles": [
+      "Fresher Software Engineer",
+      "ReactJS Developer",
+      "AI Enthusiast"
+    ],
+    "viewWork": "Xem Dự Án"
+  }
+}

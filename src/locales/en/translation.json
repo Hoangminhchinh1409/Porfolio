@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "resume": "Download Resume"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Hoang Minh Chinh",
+    "tagline": "I build things for the web & train AI models.",
+    "roles": [
+      "Fresher Software Engineer",
+      "ReactJS Developer",
+      "AI Enthusiast"
+    ],
+    "viewWork": "View My Work"
+  }
+}

@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: #0f172a;
+  --color-accent: #8b5cf6;
+  --color-accent-light: #c4b5fd;
+  --color-neon: #10b981;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 transition-colors duration-300 antialiased;
+  }
+  .dark body {
+    @apply bg-slate-900 text-slate-50;
+  }
+}
