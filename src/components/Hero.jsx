@@ -101,8 +101,7 @@ const Hero = () => {
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-1 bg-linear-to-tr from-accent via-neon to-accent-light animate-spin-slow">
               <div className="w-full h-full rounded-full overflow-hidden bg-slate-900 flex items-center justify-center border-4 border-white dark:border-slate-900">
-                <div className="text-white text-6xl font-bold">HC</div>
-                {/* Fallback avatar if no image provided yet */}
+                <img src="/photos/1785978574209_5059120639947113726_5059120639947113726_1a8957d68b85b850b122e325150052db.jpg" alt="Hoang Minh Chinh" className="w-full h-full object-cover" />
               </div>
             </div>
           </motion.div>

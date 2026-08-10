@@ -94,7 +94,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-slate-500 dark:text-slate-400">LinkedIn</p>
-                  <a href="#" className="text-lg font-medium text-slate-900 dark:text-slate-100 hover:text-accent transition-colors">
+                  <a href="https://www.linkedin.com/in/minhchinh-hoang-undefined-a63a45353/?skipRedirect=true" className="text-lg font-medium text-slate-900 dark:text-slate-100 hover:text-accent transition-colors">
                     Hoang Minh Chinh
                   </a>
                 </div>
