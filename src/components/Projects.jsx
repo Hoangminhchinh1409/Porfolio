@@ -6,9 +6,9 @@ import { FaGithub } from 'react-icons/fa';
 
 const Projects = () => {
   const { t } = useTranslation();
-  const [filter, setFilter] = useState(t('projects.categories.All'));
+  const [filter, setFilter] = useState('All');
 
-  const categories = [t('projects.categories.All'), t('projects.categories.Fullstack'), t('projects.categories.Frontend'), t('projects.categories.AI')];
+  const categoryKeys = ['All', 'Fullstack', 'Frontend', 'AI'];
 
   const projectTranslations = t('projects.items', { returnObjects: true });
 
@@ -46,9 +46,9 @@ const Projects = () => {
     }
   ];
 
-  const filteredProjects = filter === t('projects.categories.All') 
+  const filteredProjects = filter === 'All' 
     ? projects 
-    : projects.filter(p => t(`projects.categories.${p.category}`) === filter);
+    : projects.filter(p => p.category === filter);
 
   return (
     <section id="projects" className="py-20 bg-white dark:bg-slate-900 transition-colors duration-300">
@@ -65,7 +65,7 @@ const Projects = () => {
           <div className="mt-2 w-20 h-1 bg-neon mx-auto rounded-full mb-8"></div>
           
           <div className="flex flex-wrap justify-center gap-4">
-            {categories.map(cat => (
+            {categoryKeys.map(cat => (
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
@@ -75,7 +75,7 @@ const Projects = () => {
                     : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
                 }`}
               >
-                {cat}
+                {t(`projects.categories.${cat}`)}
               </button>
             ))}
           </div>
