@@ -22,27 +22,6 @@ const Projects = () => {
       tech: ["ReactJS", "NodeJS", "MongoDB", "ExpressJS", "Vite", "CSS"],
       demo: "https://fitflow-e1x19kbgs-hchi50258-1895s-projects.vercel.app/",
       github: "https://github.com/Hoangminhchinh1409/fitflow"
-    },
-    // Add dummy projects to show off filtering
-    {
-      id: 2,
-      title: projectTranslations[1].title,
-      category: "AI",
-      description: projectTranslations[1].description,
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      tech: ["React", "Python", "Flask", "OpenAI API"],
-      demo: "#",
-      github: "#"
-    },
-    {
-      id: 3,
-      title: projectTranslations[2].title,
-      category: "Frontend",
-      description: projectTranslations[2].description,
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      tech: ["React", "TypeScript", "TailwindCSS", "Recharts"],
-      demo: "#",
-      github: "#"
     }
   ];
 

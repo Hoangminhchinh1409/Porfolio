@@ -59,16 +59,6 @@
         "title": "Fitflow - Sports Apparel & Gear Rental & Sales Store",
         "category": "Fullstack",
         "description": "FitFlow is developed as a web-based platform to support both sales and rental operations for sports apparel and gear stores. Acted as a Full-stack Developer, building the core sports equipment rental workflow. Designed and developed comprehensive features for the staff role, optimizing internal store operations and database management."
-      },
-      {
-        "title": "AI Image Generator",
-        "category": "AI",
-        "description": "A web application that interfaces with DALL-E to generate custom images based on user prompts. Includes prompt history and image downloading."
-      },
-      {
-        "title": "E-Commerce Dashboard",
-        "category": "Frontend",
-        "description": "A responsive admin dashboard for e-commerce platforms. Features real-time data visualization, user management, and order tracking interfaces."
       }
     ]
   },

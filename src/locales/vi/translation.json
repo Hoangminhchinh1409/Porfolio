@@ -59,16 +59,6 @@
         "title": "Fitflow - Nền tảng Cho thuê & Bán đồ thể thao",
         "category": "Fullstack",
         "description": "FitFlow là một nền tảng web hỗ trợ bán hàng và cho thuê thiết bị thể thao. Xây dựng quy trình cốt lõi của việc cho thuê đồ thể thao. Thiết kế và phát triển các tính năng dành cho nhân viên, tối ưu hóa quy trình quản lý cửa hàng và cơ sở dữ liệu."
-      },
-      {
-        "title": "Trình tạo ảnh AI",
-        "category": "AI",
-        "description": "Một ứng dụng web giao tiếp với DALL-E để tạo ra các hình ảnh tùy chỉnh dựa trên prompt của người dùng. Bao gồm lịch sử prompt và tải ảnh về."
-      },
-      {
-        "title": "Dashboard Thương mại Điện tử",
-        "category": "Frontend",
-        "description": "Bảng điều khiển quản trị phản hồi nhanh cho các nền tảng thương mại điện tử. Có khả năng trực quan hóa dữ liệu theo thời gian thực, quản lý người dùng và giao diện theo dõi đơn hàng."
       }
     ]
   },
