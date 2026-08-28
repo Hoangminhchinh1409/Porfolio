@@ -8,7 +8,7 @@ const Terminal = () => {
     { type: 'system', content: 'Type "help" to see available commands.' }
   ]);
   const [input, setInput] = useState('');
-  const bottomRef = useRef(null);
+  const containerRef = useRef(null);
 
   const commands = {
     help: 'Available commands: whoami, skills, clear',
@@ -18,7 +18,9 @@ const Terminal = () => {
   };
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
+    if (containerRef.current) {
+      containerRef.current.scrollTop = containerRef.current.scrollHeight;
+    }
   }, [history]);
 
   const handleCommand = (e) => {
@@ -64,7 +66,7 @@ const Terminal = () => {
           </div>
           
           {/* Terminal Body */}
-          <div className="p-6 h-80 overflow-y-auto font-mono text-sm" style={{ scrollbarWidth: 'thin' }}>
+          <div ref={containerRef} className="p-6 h-80 overflow-y-auto font-mono text-sm" style={{ scrollbarWidth: 'thin' }}>
             {history.map((line, i) => (
               <div key={i} className="mb-2">
                 {line.type === 'user' && (
@@ -92,7 +94,6 @@ const Terminal = () => {
                 autoFocus={false}
               />
             </div>
-            <div ref={bottomRef} />
           </div>
         </motion.div>
       </div>
