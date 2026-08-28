@@ -69,10 +69,10 @@ const Contact = () => {
             className="flex flex-col justify-center"
           >
             <h3 className="text-2xl font-semibold mb-6 text-slate-800 dark:text-slate-100">
-              Let's Connect
+              {t('contact.title')}
             </h3>
             <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed max-w-md">
-              I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+              {t('contact.desc')}
             </p>
             
             <div className="space-y-6">
@@ -123,39 +123,39 @@ const Contact = () => {
             <form ref={form} onSubmit={handleSubmit(onSubmit)} className="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-700">
               <div className="space-y-6">
                 <div>
-                  <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Name</label>
+                  <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">{t('contact.labels.name')}</label>
                   <input
                     type="text"
                     name="user_name"
                     {...register('user_name', { required: true })}
                     className={`w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-900 border ${errors.user_name ? 'border-red-500' : 'border-slate-200 dark:border-slate-700'} text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-accent transition-all`}
-                    placeholder="John Doe"
+                    placeholder={t('contact.placeholders.name')}
                   />
-                  {errors.user_name && <span className="text-red-500 text-xs mt-1">Name is required</span>}
+                  {errors.user_name && <span className="text-red-500 text-xs mt-1">{t('contact.errors.name')}</span>}
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Email</label>
+                  <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">{t('contact.labels.email')}</label>
                   <input
                     type="email"
                     name="user_email"
                     {...register('user_email', { required: true, pattern: /^\S+@\S+$/i })}
                     className={`w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-900 border ${errors.user_email ? 'border-red-500' : 'border-slate-200 dark:border-slate-700'} text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-accent transition-all`}
-                    placeholder="john@example.com"
+                    placeholder={t('contact.placeholders.email')}
                   />
-                  {errors.user_email && <span className="text-red-500 text-xs mt-1">Valid email is required</span>}
+                  {errors.user_email && <span className="text-red-500 text-xs mt-1">{t('contact.errors.email')}</span>}
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Message</label>
+                  <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">{t('contact.labels.message')}</label>
                   <textarea
                     name="message"
                     {...register('message', { required: true })}
                     rows="4"
                     className={`w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-900 border ${errors.message ? 'border-red-500' : 'border-slate-200 dark:border-slate-700'} text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-accent transition-all resize-none`}
-                    placeholder="Your message..."
+                    placeholder={t('contact.placeholders.message')}
                   ></textarea>
-                  {errors.message && <span className="text-red-500 text-xs mt-1">Message is required</span>}
+                  {errors.message && <span className="text-red-500 text-xs mt-1">{t('contact.errors.message')}</span>}
                 </div>
 
                 <button
@@ -163,10 +163,10 @@ const Contact = () => {
                   disabled={status === 'sending'}
                   className="w-full flex justify-center items-center py-3 px-4 border border-transparent rounded-xl shadow-sm text-sm font-medium text-white bg-accent hover:bg-violet-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent transition-colors disabled:opacity-70"
                 >
-                  {status === 'idle' && <><Send className="w-4 h-4 mr-2" /> Send Message</>}
-                  {status === 'sending' && <span className="animate-pulse">Sending...</span>}
-                  {status === 'success' && <><CheckCircle className="w-4 h-4 mr-2 text-green-300" /> Sent Successfully</>}
-                  {status === 'error' && <><AlertCircle className="w-4 h-4 mr-2 text-red-300" /> Failed to send</>}
+                  {status === 'idle' && <><Send className="w-4 h-4 mr-2" /> {t('contact.status.send')}</>}
+                  {status === 'sending' && <span className="animate-pulse">{t('contact.status.sending')}</span>}
+                  {status === 'success' && <><CheckCircle className="w-4 h-4 mr-2 text-green-300" /> {t('contact.status.success')}</>}
+                  {status === 'error' && <><AlertCircle className="w-4 h-4 mr-2 text-red-300" /> {t('contact.status.error')}</>}
                 </button>
               </div>
             </form>

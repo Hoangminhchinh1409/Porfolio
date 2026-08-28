@@ -6,16 +6,18 @@ import { FaGithub } from 'react-icons/fa';
 
 const Projects = () => {
   const { t } = useTranslation();
-  const [filter, setFilter] = useState('All');
+  const [filter, setFilter] = useState(t('projects.categories.All'));
 
-  const categories = ['All', 'Fullstack', 'Frontend', 'AI'];
+  const categories = [t('projects.categories.All'), t('projects.categories.Fullstack'), t('projects.categories.Frontend'), t('projects.categories.AI')];
+
+  const projectTranslations = t('projects.items', { returnObjects: true });
 
   const projects = [
     {
       id: 1,
-      title: "Fitflow - Sports Apparel & Gear Rental & Sales Store",
+      title: projectTranslations[0].title,
       category: "Fullstack",
-      description: "FitFlow is developed as a web-based platform to support both sales and rental operations for sports apparel and gear stores. Acted as a Full-stack Developer, building the core sports equipment rental workflow. Designed and developed comprehensive features for the staff role, optimizing internal store operations and database management.",
+      description: projectTranslations[0].description,
       image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       tech: ["ReactJS", "NodeJS", "MongoDB", "ExpressJS", "Vite", "CSS"],
       demo: "https://fitflow-e1x19kbgs-hchi50258-1895s-projects.vercel.app/",
@@ -24,9 +26,9 @@ const Projects = () => {
     // Add dummy projects to show off filtering
     {
       id: 2,
-      title: "AI Image Generator",
+      title: projectTranslations[1].title,
       category: "AI",
-      description: "A web application that interfaces with DALL-E to generate custom images based on user prompts. Includes prompt history and image downloading.",
+      description: projectTranslations[1].description,
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       tech: ["React", "Python", "Flask", "OpenAI API"],
       demo: "#",
@@ -34,9 +36,9 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "E-Commerce Dashboard",
+      title: projectTranslations[2].title,
       category: "Frontend",
-      description: "A responsive admin dashboard for e-commerce platforms. Features real-time data visualization, user management, and order tracking interfaces.",
+      description: projectTranslations[2].description,
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       tech: ["React", "TypeScript", "TailwindCSS", "Recharts"],
       demo: "#",
@@ -44,9 +46,9 @@ const Projects = () => {
     }
   ];
 
-  const filteredProjects = filter === 'All' 
+  const filteredProjects = filter === t('projects.categories.All') 
     ? projects 
-    : projects.filter(p => p.category === filter);
+    : projects.filter(p => t(`projects.categories.${p.category}`) === filter);
 
   return (
     <section id="projects" className="py-20 bg-white dark:bg-slate-900 transition-colors duration-300">

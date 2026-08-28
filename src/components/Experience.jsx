@@ -6,15 +6,7 @@ import { Briefcase } from 'lucide-react';
 const Experience = () => {
   const { t } = useTranslation();
 
-  const experiences = [
-    {
-      company: "True Platform (Now: Rework)",
-      role: "Artificial Intelligence and ReactJS Intern",
-      date: "May 2024 - September 2024",
-      description: "AI & Backend Development: Developed and optimized AI features (Invoice Parsing, Intelligent Chatbot, Sentiment Analysis) and served them via RESTful APIs using Python and FastAPI. Frontend Testing Platform: Built a dedicated interactive web application using ReactJS and NodeJS to test prompt flows, visualize data outputs, and evaluate AI model accuracy. System Deployment: Containerized the AI models and web applications using Docker, ensuring scalable, isolated, and consistent environments across development and testing phases.",
-      skills: ["ReactJS", "NodeJS", "Python", "FastAPI", "Docker", "AI"]
-    }
-  ];
+  const experiences = t('experience.items', { returnObjects: true });
 
   return (
     <section id="experience" className="py-20 bg-slate-50 dark:bg-slate-900/50 transition-colors duration-300">

@@ -44,13 +44,13 @@ const About = () => {
         >
           <motion.div variants={itemVariants}>
             <h3 className="text-2xl font-semibold mb-4 text-slate-800 dark:text-slate-100">
-              Who I am
+              {t('about.title')}
             </h3>
             <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed mb-6">
-              Highly motivated and detail-oriented IT fresh graduate with a strong focus on Frontend development. Skilled in building responsive, user-centric web applications using ReactJS and NodeJS. Possesses hands-on experience in studying and training AI models.
+              {t('about.desc1')}
             </p>
             <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-              Known for strong analytical thinking, fast learning capabilities, and a passion for solving complex technical problems.
+              {t('about.desc2')}
             </p>
           </motion.div>
 
@@ -61,8 +61,8 @@ const About = () => {
                   <GraduationCap className="w-8 h-8" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold text-slate-900 dark:text-slate-100">FPT University</h4>
-                  <p className="text-slate-500 dark:text-slate-400 mt-1">Bachelor of Information Technology (Fall 2021 - Expected Fall 2025)</p>
+                  <h4 className="text-xl font-semibold text-slate-900 dark:text-slate-100">{t('about.education.name')}</h4>
+                  <p className="text-slate-500 dark:text-slate-400 mt-1">{t('about.education.degree')}</p>
                 </div>
               </div>
             </div>
@@ -73,8 +73,8 @@ const About = () => {
                   <Award className="w-8 h-8" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-semibold text-slate-900 dark:text-slate-100">Certifications</h4>
-                  <p className="text-slate-500 dark:text-slate-400 mt-1">Microsoft Office Specialist (MOS) Certification</p>
+                  <h4 className="text-xl font-semibold text-slate-900 dark:text-slate-100">{t('about.certifications.name')}</h4>
+                  <p className="text-slate-500 dark:text-slate-400 mt-1">{t('about.certifications.detail')}</p>
                 </div>
               </div>
             </div>

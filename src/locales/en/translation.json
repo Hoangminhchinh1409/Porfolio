@@ -17,5 +17,84 @@
       "AI Enthusiast"
     ],
     "viewWork": "View My Work"
+  },
+  "about": {
+    "title": "Who I am",
+    "desc1": "Highly motivated and detail-oriented IT fresh graduate with a strong focus on Frontend development. Skilled in building responsive, user-centric web applications using ReactJS and NodeJS. Possesses hands-on experience in studying and training AI models.",
+    "desc2": "Known for strong analytical thinking, fast learning capabilities, and a passion for solving complex technical problems.",
+    "education": {
+      "name": "FPT University",
+      "degree": "Bachelor of Information Technology (Fall 2021 - Expected Fall 2025)"
+    },
+    "certifications": {
+      "name": "Certifications",
+      "detail": "Microsoft Office Specialist (MOS) Certification"
+    }
+  },
+  "skills": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "ai_tools": "AI & Tools"
+  },
+  "experience": {
+    "items": [
+      {
+        "company": "True Platform (Now: Rework)",
+        "role": "Artificial Intelligence and ReactJS Intern",
+        "date": "May 2024 - September 2024",
+        "description": "AI & Backend Development: Developed and optimized AI features (Invoice Parsing, Intelligent Chatbot, Sentiment Analysis) and served them via RESTful APIs using Python and FastAPI. Frontend Testing Platform: Built a dedicated interactive web application using ReactJS and NodeJS to test prompt flows, visualize data outputs, and evaluate AI model accuracy. System Deployment: Containerized the AI models and web applications using Docker, ensuring scalable, isolated, and consistent environments across development and testing phases.",
+        "skills": ["ReactJS", "NodeJS", "Python", "FastAPI", "Docker", "AI"]
+      }
+    ]
+  },
+  "projects": {
+    "categories": {
+      "All": "All",
+      "Fullstack": "Fullstack",
+      "Frontend": "Frontend",
+      "AI": "AI"
+    },
+    "items": [
+      {
+        "title": "Fitflow - Sports Apparel & Gear Rental & Sales Store",
+        "category": "Fullstack",
+        "description": "FitFlow is developed as a web-based platform to support both sales and rental operations for sports apparel and gear stores. Acted as a Full-stack Developer, building the core sports equipment rental workflow. Designed and developed comprehensive features for the staff role, optimizing internal store operations and database management."
+      },
+      {
+        "title": "AI Image Generator",
+        "category": "AI",
+        "description": "A web application that interfaces with DALL-E to generate custom images based on user prompts. Includes prompt history and image downloading."
+      },
+      {
+        "title": "E-Commerce Dashboard",
+        "category": "Frontend",
+        "description": "A responsive admin dashboard for e-commerce platforms. Features real-time data visualization, user management, and order tracking interfaces."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's Connect",
+    "desc": "I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+    "labels": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message"
+    },
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "message": "Your message..."
+    },
+    "errors": {
+      "name": "Name is required",
+      "email": "Valid email is required",
+      "message": "Message is required"
+    },
+    "status": {
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Sent Successfully",
+      "error": "Failed to send"
+    }
   }
 }
