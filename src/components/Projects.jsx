@@ -20,7 +20,7 @@ const Projects = () => {
       description: projectTranslations[0].description,
       image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       tech: ["ReactJS", "NodeJS", "MongoDB", "ExpressJS", "Vite", "CSS"],
-      demo: "https://fitflow-e1x19kbgs-hchi50258-1895s-projects.vercel.app/",
+      demo: "https://fitflow-orcin.vercel.app/",
       github: "https://github.com/Hoangminhchinh1409/fitflow"
     }
   ];
